@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script><link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-bdd-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname"></span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <a
+                    href="9dd226e389412dd19937ca4dd15a31714dd47456c22d56550f3a226a9dbe12df.html">Praticar Manipulacao De Alerts E Popups</a>
+                > <a
+                    href="c1d737fa191777558202ffc543f78c0fd2172232a7bc639c6867ec4cde2f0290.html">Manipular Alerts e PopUps </a>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 05-02-2018 10:01</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Praticar Manipulacao De Alerts E Popups</span>
+                                    <span class="badge tag-badge">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="826a37864bb58a422ccfdde0e03f8de10f0d45e61a08b2404295621e8bd62bae.html">Pratica4
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-exclamation-triangle error-icon fa-3x' title='ERROR'></i></span>
+                            <span class="test-case-title">
+                                <span class="error-color">Manipular Alerts E Popups
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Open home: http://toolsqa.com/</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+                <div class="panel-heading"><span class='error-caption ellipsis'>ERROR: No alert present exception: no alert ...</span></div>
+                <div class="panel-body">
+                    <a href="pagesource3639103483139922882.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="scaled_1f498964a4873edbd9a431829e72a47745ee3924fafbacdbabb09746bc362599.png" title="Given estou na pagina inicial do site &quot;&lt;url&gt;&quot;" width="960"/>
+                <img src="scaled_4599e192a61694d6e375d206946e4517eddfdcb4274437f9d2400d9f1d148784.png" title="Open home: http://toolsqa.com/" width="960"/>
+                <img src="scaled_8bec7f28ff7c7cfc96dd191623d296fd21d4e3c68cd5bc752db652585db84db3.png" title="When clico no 'menu superior' &quot;&lt;menu&gt;&quot;" width="960"/>
+                <img src="scaled_aba9335098451a7c4c605674ab36a138d095409ca58a6b11af8872819785e60e.png" title="When clico no 'menu superior' &quot;&lt;menu&gt;&quot;" width="960"/>
+                <img src="scaled_31afc796d896639e234164ca09e59d6df7b1b85399fce898040e039010ec8b7a.png" title="And clico no 'menu superior' &quot;&lt;subMenu&gt;&quot;" width="960"/>
+                <img src="scaled_5292618df0f8888a39623ba0bcdc74df10e16b4595853744d03930081b1609ae.png" title="And clico no 'menu superior' &quot;&lt;subMenu&gt;&quot;" width="960"/>
+                <img src="scaled_f496c58eb72f9bff66418a219649169b44266b2310350469a7d30ba2a587329e.png" title="And clico no botao 'Simple Alert'" width="960"/>
+                <img src="scaled_74afa9c9f98d96b160f768ddfebff5c21ddaf6311e44e703fec0339637b2a7b3.png" title="And clico no botao do 'Alerta' Simples" width="960"/>
+                <img src="74afa9c9f98d96b160f768ddfebff5c21ddaf6311e44e703fec0339637b2a7b3.png" title="And clico no botao 'Confirm PopUp'" width="960"/>
+                <img src="74afa9c9f98d96b160f768ddfebff5c21ddaf6311e44e703fec0339637b2a7b3.png" title="And clico no botao do 'Alerta' com opcoes &quot;&lt;opcaoBtn&gt;&quot;" width="960"/>
+                <img src="74afa9c9f98d96b160f768ddfebff5c21ddaf6311e44e703fec0339637b2a7b3.png" title="And clico no botao 'Prompt PopUp'" width="960"/>
+                <img src="74afa9c9f98d96b160f768ddfebff5c21ddaf6311e44e703fec0339637b2a7b3.png" title="And preencho o 'campo do Alerta' &quot;&lt;conteudo&gt;&quot;" width="960"/>
+                <img src="74afa9c9f98d96b160f768ddfebff5c21ddaf6311e44e703fec0339637b2a7b3.png" title="Then clico no botao do 'Alerta' com opcoes &quot;&lt;opcaoBtn&gt;&quot;" width="960"/>
+                <img src="74afa9c9f98d96b160f768ddfebff5c21ddaf6311e44e703fec0339637b2a7b3.png" title="Manipular confirm pop up: OK: <span class='error-color'>ERROR</span>" width="960"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 1.3.0</span>
+</div>
+</body>
+</html>

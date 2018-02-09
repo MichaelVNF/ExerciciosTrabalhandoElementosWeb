@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script><link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-bdd-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname"></span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <a
+                    href="bf346618971415ec86171bee16232c0137225d197c4befe3ca884301e020042a.html">Praticar Interacoes Web</a>
+                > <a
+                    href="52a65c2e98b77211c4cc9c0d039cf2dc6496f933a38593e2c5011034c006c98b.html">Praticar Interacoes </a>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 05-02-2018 09:32</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Praticar Interacoes Web</span>
+                                    <span class="badge tag-badge">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="97a92e64ada7dc2473021c3a9e05f57e1c005384fd26f5e7a84c73fead5c8176.html">Pratica
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-check-square-o success-icon fa-3x' title='SUCCESS'></i></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Praticar Interacoes
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Open home: http://demoqa.com/</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="daa0bf458e8f65e244061f2ae9c7e3fe2d3f80614c0ed3b1b6d23290ef8031f1.png" title="Given estou na pagina inicial do site &quot;&lt;url&gt;&quot;" width="960"/>
+                <img src="daa0bf458e8f65e244061f2ae9c7e3fe2d3f80614c0ed3b1b6d23290ef8031f1.png" title="Open home: http://demoqa.com/" width="960"/>
+                <img src="e61f78fc6328c53935d7c596d70d0e5feafe4a7005540317e24640f49be5d48e.png" title="When clico no menu 'Draggable'" width="960"/>
+                <img src="fd532202418170e5604274d96b31781baf715d0c05412928a84409eb53b18d59.png" title="And na pagina 'Draggable' em 'Default functionality' arrastar e soltar a div &quot;&lt;x&gt;&quot; &quot;&lt;y&gt;&quot;" width="960"/>
+                <img src="1331840284e714d509d2796a55d78f02a4197d8d964baf466ffd525c85ab557b.png" title="And na pagina 'Draggable' em 'Draggable And Sortable' arrastar e soltar classificando a li &quot;&lt;pos&gt;&quot;" width="960"/>
+                <img src="3df22925a1ded00a8779b4146bcd0ac917c4c0ba2ef03f003d4e0c41f57ddbfa.png" title="And clico no menu 'Droppable'" width="960"/>
+                <img src="38d9e93591c919c132b5f7eb1bd10ca0c745eb3059475309e4130550cdcfa3b3.png" title="And clico no menu 'Droppable'" width="960"/>
+                <img src="e73c8795fe9c8cbbbb8471f25417c7ecffdc49d9731f1e5fcc34c3b45fe34d6a.png" title="And na pagina 'Droppable' em 'Default functionality' arrastar e soltar a div sobre outra" width="960"/>
+                <img src="c074a2470c06f1aa8917cf276ec18a4688b891e6b9f365a78eb28124ef482d3c.png" title="And na pagina 'Droppable' em 'Shopping cart demo' arrastar e soltar a li sobre a div" width="960"/>
+                <img src="0b8b444d176e4e3e1d6ea15a91e3ba6f023f6912d204642662c8c9112b446ca6.png" title="And clico no menu 'Resizable'" width="960"/>
+                <img src="457835e416f343a1521cd101ea150d160bfb60cb0a7417e112f4fafcbf042dba.png" title="And na pagina 'Resizable' em 'Default functionality' redimensionar div &quot;&lt;x&gt;&quot; &quot;&lt;y&gt;&quot;" width="960"/>
+                <img src="9bff4e0dfa7f724c3c9d50310bdfe25f4df079d4db5818e98a337eaaa232d36a.png" title="And clico no menu 'Selectable'" width="960"/>
+                <img src="2ad6ebfce81359d78f8bf5be798e61d766027143c017a0cdc0cd4a0ee399ae33.png" title="And na pagina 'Selectable' em 'Display as grid' selecionar todos os numeros" width="960"/>
+                <img src="8bd77a8bbc5c15e77a9845ffaca7681ba8fe1c8e4f8a19ce6037e5cac129d36e.png" title="And na pagina 'Selectable' em 'Serialize' selecionar itens especificos &quot;&lt;numItens&gt;&quot; #separar por virgulas#" width="960"/>
+                <img src="2468051ddbce32c2d75c92f8f4e9c87caee2bdea88301ef898a65a4de2ba2f5b.png" title="And clico no menu 'Sortable'" width="960"/>
+                <img src="5d7d1a55aadbcc8afcf540671430d29c4610e6c4693643d19889a0562c3b4aea.png" title="Then na pagina 'Sortable' em 'Display as grid' inverter a ordem dos elementos: <span class='success-color'>SUCCESS</span>" width="960"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 1.3.0</span>
+</div>
+</body>
+</html>
