@@ -28,10 +28,10 @@ public class PageObjectClass extends PageObject{
 	@FindBy(id = "droppableview")
 	private WebElement divDroppable;
 	
-	@FindBy(xpath = "//*[@id=\"ui-id-7\"]/ul/li")
+	@FindBy(xpath = "//div[@id='ui-id-7']/ul/li")
 	private List<WebElement> liProducts;
 	
-	@FindBy(xpath="//*[@id=\"cart\"]/div")
+	@FindBy(xpath="//div[@id='cart']/div")
 	private WebElement divDroppable2;
 	
 	@FindBy(id = "menu-item-143")
@@ -43,16 +43,16 @@ public class PageObjectClass extends PageObject{
 	@FindBy(id = "menu-item-142")
 	private WebElement menuSelectable;
 	
-	@FindBy(xpath = "//*[@id=\"selectable_grid\"]/li")
+	@FindBy(xpath = "//*[@id='selectable_grid']/li")
 	private List<WebElement> liNumeros;
 	
-	@FindBy(xpath = "//*[@id=\"selectable-serialize\"]/li")
+	@FindBy(xpath = "//*[@id='selectable-serialize']/li")
 	private List<WebElement> liItens;
 	
 	@FindBy(id = "menu-item-151")
 	private WebElement menuSortable;
 	
-	@FindBy(xpath = "//*[@id=\"sortable_grid\"]/li")
+	@FindBy(xpath = "//*[@id='sortable_grid']/li")
 	private List<WebElement> liNumSortable;
 	
 	
@@ -60,7 +60,7 @@ public class PageObjectClass extends PageObject{
 	@FindBy(id = "menu-item-144")
 	private WebElement menuAccordion;
 
-	@FindBy(xpath = "//*[@id=\"accordion\"]/h3")
+	@FindBy(xpath = "//*[@id='accordion']/h3")
 	private List<WebElement> h3Sections;
 	
 	@FindBy(id = "menu-item-145")
@@ -69,7 +69,7 @@ public class PageObjectClass extends PageObject{
 	@FindBy(id = "tagsss")
 	private WebElement txtTags;
 	
-	@FindBy(xpath = "//*[@id=\"ui-id-2\"]/li")
+	@FindBy(xpath = "//*[@id='ui-id-2']/li")
 	private List<WebElement> listaSugestoesPesq;
 	
 	@FindBy(id = "menu-item-146")
@@ -79,19 +79,19 @@ public class PageObjectClass extends PageObject{
 	@FindBy(id = "datepicker1")
 	private WebElement txtDate;
 	
-	@FindBy(xpath = "//*[@id=\"ui-datepicker-div\"]/div/div/span[1]")
+	@FindBy(xpath = "//span[@class='ui-datepicker-month']")
 	private WebElement lblMes;
 	
-	@FindBy(xpath = "//*[@id=\"ui-datepicker-div\"]/div/div/span[2]")
+	@FindBy(xpath = "//span[@class='ui-datepicker-year']")
 	private WebElement lblAno;
 	
-	@FindBy(xpath = "//*[@id=\"ui-datepicker-div\"]/table/tbody/tr/td")
+	@FindBy(xpath = "//a[starts-with(@class,'ui-state-default')]")
 	private List<WebElement> listaDias;
 	
-	@FindBy(xpath = "//*[@id=\"ui-datepicker-div\"]/div/a[2]/span")
+	@FindBy(xpath = "//span[contains(text(),'Next')]")
 	private WebElement spanNext;
 	
-	@FindBy(xpath = "//*[@id=\"ui-datepicker-div\"]/div/a[1]/span")
+	@FindBy(xpath = "//span[contains(text(),'Previous')]")
 	private WebElement spanPrevious;
 	///
 	
@@ -101,21 +101,21 @@ public class PageObjectClass extends PageObject{
 	@FindBy(linkText = "News")
 	private WebElement menuNews;
 	
-	@FindBy(xpath = "//*[@id=\"navigate\"]/ul/li[5]/ul/li/a")
+	@FindBy(xpath = "(//a[text()='News'])[2]/following::a[starts-with(text(),'Sub Menu Item')]")
 	private List<WebElement> subMenuNews;
 	
 	@FindBy(id = "menu-item-97")
 	private WebElement menuSlider;
 	
 	
-	@FindBy(xpath = "//*[@id=\"slider-range-max\"]/span")
+	@FindBy(xpath = "//*[@id='slider-range-max']/span")
 	private WebElement spanSlider;
 	
 	//FRAMES
 	@FindBy(id = "menu-item-148")
 	private WebElement menuFramesAndWindows;
 			
-	@FindBy(xpath = "//*[@id=\"tabs-2\"]/div/p/a")
+	@FindBy(xpath = "//*[@id='tabs-2']/div/p/a")
 	private WebElement linkNewWindow;
 	
 	@FindBy(linkText = "Open Frameset Window")
@@ -125,13 +125,13 @@ public class PageObjectClass extends PageObject{
 	@FindBy(id = "primary-menu")
 	private WebElement menuSuperior;
 	
-	@FindBy(xpath = "//*[@id=\"content\"]/p[4]/button")
+	@FindBy(xpath = "//*[@id='content']/p[4]/button")
 	private WebElement btnSimpleAlert;
 	
-	@FindBy(xpath = "//*[@id=\"content\"]/p[8]/button")
+	@FindBy(xpath = "//*[@id='content']/p[8]/button")
 	private WebElement btnConfirmPopUp;
 	
-	@FindBy(xpath = "//*[@id=\"content\"]/p[11]/button")
+	@FindBy(xpath = "//*[@id='content']/p[11]/button")
 	private WebElement btnPromptPopUp;
 
 	

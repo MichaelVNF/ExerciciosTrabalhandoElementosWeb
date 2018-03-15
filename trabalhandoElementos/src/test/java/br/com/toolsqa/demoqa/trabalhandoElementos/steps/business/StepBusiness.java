@@ -480,8 +480,6 @@ public class StepBusiness {
 		LOG.info("\n\nTEXTO DO ALERTA C/ ENTRADA DE DADOS: " + promptPopUp.getText());
 		promptPopUp.sendKeys(conteudo);
 	    page.waitFor(3).seconds();//apenas p/ visualizar
-	    
-	    
 
 	}
 
